@@ -1,0 +1,169 @@
+/*global*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* nav */
+
+nav ul {
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 18.5px;
+}
+nav ul li:last-child {
+    padding-left: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(214, 116, 114);
+}
+
+/* image */
+.image-section {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(153, 153, 153, 0),
+            rgba(0, 0, 0, 0.8)
+        ),
+        url("Images/header-flower.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    padding: 19rem;
+}
+
+/* text in the image */
+
+.image-section article {
+    text-align: center;
+    color: white;
+}
+
+.image-section article p {
+    display: inline-block;
+    width: 50%;
+}
+
+.image-section article h1 {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 40px;
+}
+
+h1 + hr {
+    width: 60px;
+    height: 2px;
+    background-color: rgb(214, 116, 114);
+    border: none;
+}
+
+/* main */
+/*first section */
+.mid-section {
+    background-color: rgb(214, 116, 114);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 4rem 5.5rem;
+    color: white;
+}
+
+.mid-section h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.mid-section p {
+    display: inline-block;
+    width: 49%;
+}
+.mid-section article {
+    position: relative;
+}
+.mid-section button {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: rgb(214, 116, 114);
+    font-weight: bold;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mid-section button:hover,
+a:hover {
+    text-decoration: underline;
+}
+
+h2 + hr {
+    width: 60px;
+    height: 2px;
+    background-color: white;
+    border: none;
+}
+
+/* second section */
+
+.items-section h2 {
+    text-align: center;
+}
+.items-section h3 {
+    font-size: 17px;
+    font-weight: normal;
+}
+.items-section ul {
+    padding-left: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: -3rem;
+    padding: 0 9rem;
+}
+
+
+.items-section ul li {
+    display: inline-block;
+}
+
+.items-section ul li p {
+    display: inline-block;
+    width: 59%;
+    text-align: center;
+}
+
+.items-section h2 + hr {
+    width: 60px;
+    height: 2px;
+    background-color: rgb(214, 116, 114);
+    border: none;
+}
+
+.items-section img {
+    width: 100px;
+}
+
+/* footer */
+
+footer {
+    background: rgb(214, 116, 114);
+    padding: 1px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+/* ------ global ------ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: #6d6d6d;
+}
+
+/* if want ot have background color or smth where the main content is
+main {
+    background-color: black;
+}
+*/
+
+a {
+    text-decoration: none;
+}
+
+.content-wrap {
+    width: 600px;
+    margin: 0 auto;
+}
+
+/* ------ navigation bar styling ------ */
+
+nav ul {
+    background: #2e0328; /* #6d546a -> original color for nav bar and footer*/
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* ------ site-logo-link part ------ */
+
+.container {
+    margin: 0 auto;
+    width: 500px;
+    height: 350px;
+    /* used to remove margin that the h1 tag has -> now is fixed */
+    /* border: 1px solid transparent; */
+}
+
+.container h1 {
+    margin: 0 auto;
+    position: relative;
+    top: 130px;
+    left: 55px;
+    border: 7px solid #d3d3d3;
+    display: inline-block; /* or just inline, cause block extends the border */
+    padding: 20px;
+}
+
+.container a {
+    color: #d3d3d3;
+}
+
+/* ------ main-part items and content ------*/
+
+h2 {
+    font-size: 40px;
+    line-height: 1.4em;
+    text-align: center;
+    font-weight: 200;
+}
+
+p {
+    font-size: 20px;
+    padding: 10px 0;
+    line-height: 2em;
+    text-align: justify;
+}
+
+.background-container {
+    background-color: #2e0328;
+    /* very cool color #2e0328;*/
+    /* cool color in the purple pallette #440836 */
+}
+
+/* to add footer */
+footer {
+    /* position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;*/
+    background-color:#2e0328 /* original color #6d546a */;
+    padding: 10px;
+    text-align: center;
+}
+footer h3 {
+    font-size: 14px;
+    font-weight: 250;
+}
+
+footer a {
+    color: transparent;
+}
+
+footer a:hover {
+    color: white;
+}

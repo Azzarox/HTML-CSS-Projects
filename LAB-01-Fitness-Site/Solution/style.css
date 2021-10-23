@@ -1,0 +1,138 @@
+body {
+    /* background-color: lightslategrey; */
+    margin: 0 auto;
+    padding: 3rem 10rem;
+    font-family: Helvetica, sans-serif;
+}
+
+/* the logo and icon // the original is placed in the <header> tag but here it is in the <nav> */
+nav p {
+    float: left;
+    margin-top: 20px;
+    font-size:18px;
+    color:#f9690e
+}
+
+.fas /* icon */ { 
+    padding-right: 5px;
+}
+
+/* nav bar with the menu */
+
+nav {
+    background-color: white;
+    text-align: right;
+}
+ul {
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-right: -0.8%;
+    padding: 10px 0;
+}
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #f9690e;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* from me */
+
+ul li a:hover {
+    border-bottom: 2px solid #f9690e;
+}
+
+/* section with backgorund image and the button */
+.intro {
+    background-image: url("../Requirements-and-Resources/Images/picture.jpg");
+    background-size: cover;
+    padding: 15rem 10rem; /* or 10rem */
+    font-size: 1.5em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.intro p {
+    width: 60%;
+    margin: 3rem auto;
+    color: white;
+}
+
+.intro span {
+    color: #f9690e;
+}
+.intro button {
+    color: white;
+    font-weight: 600;
+    background-color: #f9690e;
+    padding: 6px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.intro button:hover {
+    color: #f9690e;
+    background-color: white;
+}
+
+/* main sections with articles */
+main {
+    display: flex;
+}
+
+main section {
+    border-right: thick solid white;
+    border: collapse;
+    background-color: #f9690e;
+}
+
+main section:last-child {
+    border: none;
+}
+
+main article {
+    color: white;
+}
+main article p {
+    text-align: left;
+    padding: 2.5rem;
+    padding-top: 1rem;
+}
+
+main article h3 {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* footer */
+/* if used with body background-color leave as normal <p> tag margin */
+
+
+footer {
+    background-color: white;
+    padding-top: 1rem;
+}
+
+footer article {
+    display: inline-block;
+    width: 50%;
+}
+
+footer article p {
+    margin: 0;
+    /* padding-bottom: 10px;
+    padding-left: 10px; */
+}
+
+footer article:nth-child(2) {
+    text-align: right;
+    margin-right: -0.8%;
+}
+footer article:nth-child(2) .fab {
+    padding: 10px;
+}

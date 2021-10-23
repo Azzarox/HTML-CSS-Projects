@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&family=PT+Serif&display=swap");
+
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.navigation {
+    padding: 0 20px;
+}
+
+.navigation p {
+    display: inline-block;
+    font-size: 22px;
+    width: 54%;
+}
+
+.navigation p span {
+    color: #50b9e1;
+}
+
+
+nav {
+    display: inline-block;
+}
+
+ul:not(ul:first-child) {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li ul {
+    padding-left: 0px;
+}
+
+nav ul li ul li {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #50b9e1;
+}
+
+.fab {
+    display: block;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* site-header image */
+
+.site-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+        url("../Requirements-and-Resources/Images/kids_main.jpg"), no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.site-header h1 {
+    margin: 0;
+    font-size: 66px;
+    font-weight: bold;
+    color: #fff;
+    width: 38%;
+    padding: 200px 0 80px 100px;
+}
+
+.site-header button {
+    font-size: 26px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 15px;
+    margin: 0 0 100px 100px;
+}
+
+.site-header button:hover {
+    background: #50b9e1;
+    border: 2px solid #50b9e1;
+    cursor: pointer;
+}
+
+/* main */
+
+/* welcome */
+
+.welcome {
+    margin: 0 auto;
+    width: 60%;
+    color: #5a7c8a;
+    padding: 20px 0;
+}
+h2 {
+    font-family: "PT Serif", serif;
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.welcome p {
+    text-align: center;
+}
+
+/* offers */
+
+.offers {
+    background: #50b9e1;
+    font-family: "PT Serif", serif;
+    color: #fff;
+    padding: 20px 30px;
+}
+
+/* .offers ul {
+    padding: 0;
+} */
+.offers li {
+    width: 28%;
+    text-align: center;
+    padding: 20px 30px;
+}
+.offers img {
+    width: 70px;
+}
+
+/* camps */
+.camps {
+    color: #5a7c8a;
+    padding: 20px 0;
+}
+.camps > p {
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.camps img {
+    width: 400px;
+    height: 250px;
+}
+
+.camps li {
+    /* padding: 0; */
+    width: 400px; /* за да ги разположим на един ред слагаме същият width колкото е снимката т.е 400px; */
+    padding: 10px 0 10px 45.7px;
+}
+
+.camps li:first-child {
+    padding-left: 0;
+}
+
+.camps li:last-child {
+    padding-left:43.7px;
+}
+
+.info {
+    border-bottom: 1px solid #5a7c8a;
+    padding-bottom: 10px;
+}
+.info div {
+    display: inline-block;
+}
+
+.info div p,
+.info div h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.info div:first-child {
+    width: 339px;
+}
+.info div:last-child {
+    padding: 10px;
+    background: #50b9e1;
+    color: #fff;
+    font-size: 22px;
+}
+
+.more-info button {
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #50b9e1;
+    color: #50b9e1;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.more-info button:hover {
+    background-color: #50b9e1;
+    border: 2px solid #50b9e1;
+    color: #fff;
+}
+/* footer */
+footer {
+    background: #50b9e1;
+    color:#5a7c8a;
+    padding: 0 40px;
+
+}
+footer p {
+    display: inline-block;
+    width: 92%;
+}
+footer ul {
+    display: inline-block;
+}
+
+footer ul li {
+    padding: 0;
+}
+footer ul li .fab{
+    border: none;
+    color: #5a7c8a;
+}

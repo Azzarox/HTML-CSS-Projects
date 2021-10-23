@@ -1,0 +1,140 @@
+body {
+    margin: 0 10rem;
+    font-family: Helvetica, sans-serif;
+}
+
+/* try with flex */
+
+/* 
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+} */
+
+/* nav bar */
+
+/* when using the display: inline-block on li items they automatically remove the bullet points */
+
+nav {
+    text-transform: uppercase;
+    background-color: #f0f1f5;
+}
+nav ul {
+    text-align: center;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+}
+nav ul li {
+    display: inline-block;
+    border-left: 3px solid white;
+    padding: 0.7rem 3rem;
+}
+
+nav ul li:last-child {
+    border-right: 3px solid white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00d3d4;
+    display: block;
+}
+
+nav ul li a i.fas {
+    font-size: 30px;
+    display: block;
+    padding: 5px 10px;
+}
+
+/* main */
+
+main {
+    display: flex;
+    position: relative;
+}
+.left,
+.right {
+    display: inline-block;
+}
+
+/* left section */
+
+.left {
+    background-color: #555c6f;
+    color: #b2b6c0;
+    width: 350px;
+    height: 400px;
+    padding: 3rem 4rem 3rem 2rem;
+}
+
+.left ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.left ul li {
+    padding-bottom: 10px;
+}
+
+.left .fab {
+    display: inline-block;
+    padding-right: 5px;
+}
+.left footer {
+    position: relative;
+    top: 37%;
+}
+
+.left h2 {
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* right section */
+
+.right {
+    background-color: #00d3d4;
+    color: white;
+    padding: 3rem 4rem 2.8rem 2rem;
+    width: 700px;
+    height: 403px;
+}
+
+.right h2 {
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0;
+    width: 10%;
+}
+.right p {
+    width: 49%;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: left;
+}
+
+.right article:last-of-type {
+    display: inline-block;
+}
+
+.right .article-img {
+    position: absolute;
+    top: 10%;
+    right: 4.5%;
+}
+
+img {
+    border: 10px solid white;
+    width: 200px;
+}
