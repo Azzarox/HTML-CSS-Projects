@@ -62,7 +62,7 @@ a:hover {
 
 .site-header {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
-        url("../Requirements-and-Resources/Images/kids_main.jpg"), no-repeat;
+        url("./Images/kids_main.jpg"), no-repeat;
     background-size: cover;
     background-position: center;
 }
