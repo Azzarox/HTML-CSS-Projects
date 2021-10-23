@@ -8,7 +8,7 @@ https://rose-nu.vercel.app/
 
 https://wirework.vercel.app/
 
-https://vercel.com/azzarox/medium
+https://medium-wine.vercel.app/
 
 https://auto-mu.vercel.app/
 
