@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    display: flex; /* to center the section /* /* so i can set flex-basis on the section */
+    justify-content: center;
+    align-items: center;
+    background: rgb(238, 238, 238);
+}
+
+
+ul {
+    display: flex;
+    /* align-items: center; wraps around the image without the space */
+    align-content: center; /* moves the image in the center but with the space*/
+
+    /* justify-content: space-between; to work in judge */
+    justify-content: center; 
+    
+    flex-wrap: wrap;
+}
+
+ul li {
+    display: flex;
+    padding: 20px;
+    border: 8px solid black;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+img {
+    object-fit: cover; /* to look better */
+    /* object-fit: contain; to be like the screenshot */
+}

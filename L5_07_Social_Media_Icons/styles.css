@@ -1,0 +1,91 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+body {
+    background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+li {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: rgb(238, 238, 238);
+    border-radius: 50%;
+    margin: 0 5px;
+    list-style-type: none;
+    position: relative;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+
+    border-radius: 50%; /* only for judge */
+}
+
+.icon::after {
+    font-family: "Font Awesome 5 Brands"; /* for social icons */
+    font-size: 30px;
+
+    padding: 10px; /* so the hover and clicking is from a bigger distance? not only on the icon */
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-one::after {
+    content: "\f082";
+}
+
+.icon-two::after {
+    content: "\f099";
+}
+
+.icon-three::after {
+    content: "\f2b3";
+}
+
+.icon-four::after {
+    content: "\f08c";
+}
+
+.icon-five::after {
+    content: "\f16d";
+}
+
+/* hover */
+
+.icon-one:hover {
+    color: #4267b2;
+}
+
+.icon-two:hover {
+    color: #1da1f2;
+}
+
+.icon-three:hover {
+    color: #db4437;
+}
+
+.icon-four:hover {
+    color: #0e76a8;
+}
+
+.icon-five:hover {
+    color: #4267b2;
+}

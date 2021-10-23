@@ -1,0 +1,48 @@
+/* this is like the image but with hover effect */
+
+body {
+    background: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center; /* to position the section in the middle horizontally */
+    align-items: center; /* to center the section to the middle vertically */
+    height: 95vh; /* so there is space and align-items works */
+}
+
+section.container {
+    display: flex; /* so the image can have flex-grow property */ /* and center the images in the section */
+    justify-content: center;
+    flex-basis: 60%; /* so the images are on 1 row */ /* gives more space so justify-content can work */
+    /* flex-basis on the section defines how much space wil lthe section be and the flex-grow of the image will depend on it */
+}
+
+img {
+    /* margin: 10px; if move the mouse it skips an image */
+    padding: 10px; /* if move the mous it DOESN"T skip an image */
+    border-radius: 25px;
+    width: 100px; /* if uses flex-basis, flex-grow doesn't work on hover */
+    height: 250px; /* if not fixed height when hover it enlarges the img in X and Y axis and not only the X */
+    object-fit: cover;
+
+    /* to make the box-shadow only on the content-box and not the padding */
+    background-clip: content-box;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.35));
+
+    /* to make smoother hover on moving from the image cursor */
+    transition: flex-grow 0.5s ease-in-out;
+
+}
+
+img:hover {
+    flex-grow: 1;
+
+    /* to make smoother hover */
+    transition: flex-grow 0.7s ease-in-out;
+}
+
+/* if img.width is 250px and section.flex-basis is 50% -> need to increase the flex-basis so the section have space to grow the image */
+
+/* initial values 
+img.width - 250px;
+section.flex-basis - 100%;
+to grow on the whole screen
+*/

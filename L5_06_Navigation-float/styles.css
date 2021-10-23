@@ -1,0 +1,109 @@
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+body {
+    background: rgb(238, 238, 238);
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.site-title {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 34px;
+    margin: 0;
+}
+img {
+    border: 3px solid black;
+    padding: 10px;
+    background: rgba(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+}
+img.right {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.center {
+    display: inline-block;
+}
+
+.center > p {
+    width: 60%;
+}
+blockquote {
+    border-left: 3px solid lightgray;
+    font-family: Georgia, serif;
+    font-style: italic;
+    color: #646464;
+
+    padding: 10px;
+    padding-top: 0;
+    float: right;
+    width: 40%;
+}
+
+blockquote > p {
+    margin-top: 0;
+}
+
+blockquote span {
+    margin-top: 10px;
+    float: right;
+}
+
+img.left {
+    float: left;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    font-size: 1em;
+}
+
+/*
+1. add inline-blcok to the two items asied and article 
+2. easiest way is to display:flex on the main element 
+*/
+
+/* using the display flex way */
+main {
+    display: flex;
+}
+
+article.wrap {
+    width: 70%;
+}
+
+aside {
+    width: 20%;
+    margin-left: 90px;
+    vertical-align: top;
+}
+
+aside a {
+    color: green;
+}
+
+/* styling nav */
+nav.main-navigation ul li {
+    float: right;
+    padding: 15px;
+    list-style: none;
+}
+
+nav.main-navigation ul li a {
+    color: rgb(0, 108, 0);
+    text-decoration: none;
+}
