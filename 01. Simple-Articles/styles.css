@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    max-width: 60vw;
+    margin: 10vh auto;
+}
+
+h1,
+span.price {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: #526275;
+    margin-bottom: 25px;
+}
+
+/* layout */
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+article {
+    width: 47%;
+}
+
+/* styling right */
+
+article.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid #44a9f8;
+    border-radius: 5px;
+}
+article.price p {
+    font-size: 18px;
+    color: #636363;
+}
+
+article.price p:nth-child(2) {
+    margin-bottom: 28px;
+}
+
+span.price {
+    color: #44a9f8;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+button.price {
+    padding: 10px 50px;
+    background: #44a9f8;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* styling left */
+
+article.info {
+    background: #e3f3fd;
+    border-radius: 8px;
+    padding: 15px 28px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.info ul {
+    list-style: none;
+    position: relative;
+}
+
+.info li::before {
+    /* for the check to appear infront of all LI items */
+    position: absolute;
+    color: #44a9f8;
+    left: 10px;
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+}
+
+.info ul li p {
+    color: #54585b;
+    font-size: 15px;
+}

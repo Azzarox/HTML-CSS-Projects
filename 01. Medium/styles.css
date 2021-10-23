@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1000px;
+    /* width: 1200px; */
+    width: 1000px;
+    margin: 10px auto;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+}
+
+p.heading {
+    font-weight: bold;
+    color: black;
+}
+
+p,
+span {
+    font-family: Helvetica, sans-serif;
+    color: #7a7575;
+    font-size: 20px;
+}
+
+/* styling */
+
+span {
+    background-color: #cefde9;
+}
+
+.article-content p {
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+section {
+    position: relative;
+}
+
+section::after {
+    content: "";
+    position: absolute;
+
+    /* fix for double border 
+    border: 1px solid #787878; 
+    border-bottom:transparent;
+    */
+
+    border-bottom: 1px solid #787878; /*border makes a double border and makes it bolder */
+
+    padding: 0 150px;
+    /* for the border-like thing below */
+    top: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* same as above but with hr tag */
+
+hr.remove-hidden-if-not-using-after-element {
+    margin-top:69px;
+    width:30%;
+    border-bottom: transparent;
+}
+
+
+button {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 50px;
+    background: #03a87c;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* layout */
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+article {
+    flex-basis: 50%;
+}

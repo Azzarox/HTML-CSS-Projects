@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Poppins:wght@400;500&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1300px; /* without width:1300px; works only on zoom out but on zoom in it misplaces the items */
+    width: 1300px;
+    margin: 30px auto;
+}
+
+/* general */
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    /* to work on 100% zoom and not 120% as in my custom */
+    /* works on 100% and 120% well */
+    line-height: 1.5;
+    font-size: 27px;
+    margin-bottom: 23px;
+}
+
+p,
+span {
+    font-family: "Poppins", sans-serif;
+}
+
+.content > p,
+ul li span {
+    color: grey;
+}
+
+/* ul stuff */
+
+ul li img {
+    width: 60px;
+    height: 60px;
+    margin-top: -7px; /* small fixing detail */
+    margin-left: -7px;
+}
+
+ul {
+    padding-left: 0;
+    /* to work on 100% zoom and not 120% as in my custom */
+    /* works on both */
+    margin-top: 37px;
+}
+
+ul li {
+    display: flex;
+    padding-bottom: 15px; /* small fixing detail */
+}
+
+ul li p {
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.list-content {
+    padding-left: 15px;
+}
+
+/* layout */
+
+main section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content,
+.content-image {
+    width: 48%; /* to leave 2% space to be able to space-between */
+}
+
+/* this makes the image to cover the whole space of the parent element */
+.content-image img {
+    /* height: 100%; */ /* removed so the width and picture doesn't scale with ul li padding and such*/
+    width: 100%;
+    object-fit: cover;
+}
