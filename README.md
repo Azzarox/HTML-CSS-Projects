@@ -2,6 +2,8 @@
 
 https://softuni-landing.vercel.app/
 
+https://certificates-one.vercel.app/
+
 https://wirework.vercel.app/
 
 https://medium-wine.vercel.app/
