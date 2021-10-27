@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+html {
+    font-family: "Roboto", sans-serif;
+}
+body {
+    margin: 0;
+}
+
+header {
+    margin: 0 120px;
+}
+
+.logo {
+    /* width: 10%; */
+    width: 256px;
+    height: 129px;
+    margin-left: -30px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    padding: 5px 20px;
+    list-style: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #666666;
+    font-weight: 500;
+}
+
+.nav ul li.sign-in a {
+    border: 1px solid #0a66c2;
+    color: #0a66c2;
+    border-radius: 25px;
+    padding: 5px 20px;
+}
+
+.sign-up-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-up-content h1 {
+    font-size: 55px;
+    color: #0a66c2;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 40%;
+}
+
+.form {
+    width: 80%;
+}
+
+.form input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 18px;
+    font-size: 22px;
+    font-weight: none;
+}
+
+.form label.pass {
+    position: relative;
+}
+
+.form label.pass .show-btn {
+    position: absolute;
+    top: 10%;
+    right: 5px;
+    top: 35%;
+    right: 3%;
+    transform: translateY(-50%);
+
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: 500;
+    color: #666666;
+}
+
+.form p {
+    margin-bottom: 30px;
+}
+
+.form p a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #666666;
+}
+
+.form .sign-in-btn {
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    background: #0a66c2;
+    cursor: pointer;
+
+    padding: 20px 0px;
+    color: white;
+
+    font-size: 25px;
+    font-weight: normal;
+    width: 100%;
+}
+
+.sign-up-image {
+    width: 50%;
+}
+
+/* main part */
+
+.bg {
+    background: #faf9f7;
+    padding: 165px 0;
+    margin-top: -9.5%; /*using margin-top with negative so it positions the items above */
+}
+
+.wrapper {
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jobs ul {
+    display: flex;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+
+.jobs ul li {
+    list-style: none;
+    padding: 15px 25px;
+
+    margin-right: 15px;
+    margin-left: 0;
+    margin-bottom: 15px;
+    background: #e6e5e4;
+    border-radius: 50px;
+}
+
+.jobs ul li:first-child {
+    margin-left: 0;
+}
+
+.jobs ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #5c5e60;
+    font-size: 24px;
+    font-weight: 500;
+    align-self: center;
+}
+
+.title {
+    width: 37%;
+    margin-right: 20%;
+}
+
+.title h2 {
+    font-size: 60px;
+    font-weight: normal;
+}
+
+.jobs {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.jobs h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #646463;
+}
+
+/* main part 2 */
+
+.post-jobs-wrapper {
+    background-color: #f1ece5;
+    padding: 100px 0;
+}
+
+.post-job {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 0 120px;
+}
+.post-job-title {
+    width: 45%;
+}
+
+.post-job-btn {
+    width: 50%;
+    align-self: center;
+}
+
+.post-job-title h2 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
+    width: 80%;
+    color: #b24020;
+}
+
+.btn {
+    /* applied to "post a job" and "find people you know" */
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+    border: 1px solid #605e5c;
+    border-radius: 50px;
+    padding: 15px 25px;
+
+    color: #605e5c;
+    font-size: 24px;
+    font-weight: normal;
+    align-self: center;
+    font-weight: 500;
+}
+
+/* main part 3 */
+
+.work-bg {
+    background: #faf9f7;
+}
+.work {
+    display: flex;
+    margin: 0 120px;
+    justify-content: start;
+    padding: 250px 0;
+}
+
+.work-content {
+    width: 43%;
+    margin-right: 15%;
+}
+
+.work-content h2,
+.get-started-content h2 {
+    font-size: 60px;
+    font-weight: normal;
+    color: #0a66c2;
+}
+
+.work-content p {
+    font-size: 40px;
+}
+
+.work-img {
+    width: 35%;
+}
+
+.work-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* main part 4 */
+
+.skills-bg {
+    background: #ffffff;
+}
+
+.skills-content {
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0;
+}
+
+.left,
+.right {
+    width: 100%;
+}
+
+.left h2,
+.right h2 {
+    font-size: 60px;
+    font-weight: normal;
+    width: 69%;
+    color: #191919;
+}
+
+.left-img,
+.right-img {
+    width: 50%;
+}
+
+.left-img img,
+.right-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* main part 5 */
+
+.get-started-bg {
+    background: url(./images/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 14% 0 30% 0;
+}
+
+.get-started-content {
+    margin: 0 120px;
+    width: 50%;
+    margin-top: -12%;
+}
+
+.get-started-btn {
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background: #0a66c2;
+    cursor: pointer;
+
+    padding: 20px 20px;
+    color: white;
+
+    font-size: 25px;
+    font-weight: normal;
+
+    margin-bottom: 33px; /* to move background image */
+}
+
+/* footer */
+.footer-bg {
+    background: #faf9f7;
+}
+
+.footer-content {
+    margin: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 78%;
+    align-items: start;
+}
+.footer-logo {
+    width: 10%;
+    margin-left: -30px;
+    margin-top:-6px; /* fixing detailing */
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+}
+.footer-content article h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color:#191d28;
+    margin-bottom: 0;
+}
+.footer-content article ul {
+    padding-left: 0;
+}
+
+.footer-content article ul li {
+    list-style: none;
+    padding: 0 0 10px 0;
+}
+
+.footer-content article ul li a {
+    text-decoration: none;
+    color: #5c5e60;
+    font-size: 20px;
+    font-weight: 500;
+}
