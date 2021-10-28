@@ -2,10 +2,10 @@
 
 @media (-webkit-device-pixel-ratio: 1.25) {
     * {
-      zoom: 0.8;
+      zoom: 1.0;
     }
   }
-  
+
 *,
 *::after,
 *::before {
